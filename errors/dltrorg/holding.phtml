@@ -1,0 +1,35 @@
+<?php
+$url = $this->getBaseUrl();
+$url = trim(str_replace(array('https://', 'http://'), '', $url), '/');
+$code = 'school';
+switch($url) {
+    case 'www.local1.com.au':
+		$code = 'club';
+        break;
+	default:
+        break;
+}
+?>
+<body class="<?php echo $code ?>">
+    <div class="wrapper">
+        <div class="page">
+            <div class="main-container">
+                <div class="main col1-layout">
+                    <!-- [start] center -->
+                        <div id="main" class="col-main">
+                        <!-- [start] content -->
+                            <!--<div class="page-title">
+                                <h1>Coming Soon</h1>
+                            </div>
+                            <p>New and exciting website coming soon!</p>-->
+                            <div class="holding-image">
+                                <img src="images/holding-page-<?php echo $code ?>.jpg" height="600" width="800" alt="coming soon"/>
+                            </div>
+                        <!-- [end] content -->
+                        </div>
+                    <!-- [end] center -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
