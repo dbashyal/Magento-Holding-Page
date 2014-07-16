@@ -2,8 +2,8 @@
 /*
  * On your index file add this code.
  */
-$holding = 'holding.flag';
-if (file_exists($holding)) {
+$holdingFile = 'holding.flag';
+if (file_exists($holdingFile)) {
     include_once dirname(__FILE__) . '/errors/holding.php';
     exit;
 }
